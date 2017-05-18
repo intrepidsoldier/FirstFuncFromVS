@@ -27,8 +27,8 @@ namespace FunctionApp1
             name = name ?? data?.name;
 
             return name == null
-                ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
-                : req.CreateResponse(HttpStatusCode.OK, "Hello Fine " + name);
+                ? req.CreateResponse(HttpStatusCode.BadRequest, "Give me a name man")
+                : req.CreateResponse(HttpStatusCode.OK, "Now that's a good name " + name);
         }
     }
 }
